@@ -26,7 +26,7 @@ namespace ConsoleApplication
                 }
             }
             
-            Console.WriteLine("En memoria hay " + Train.count + " trenes creados.");
+            Console.WriteLine("En memoria hay " + Train.Count + " trenes creados.");
             Console.WriteLine("Son menos ya que los creados hace más tiempo ya fueron recogidos por el Garbage Collector. Cada vez que este proceso destruye un objeto, llama a su destructor, que altera el valor de la variable de clase. Como el GC es controlado por el CRL y no por el programador, el momento de su recolección puede variar de una ejecución a otra.");
             Console.WriteLine();
 

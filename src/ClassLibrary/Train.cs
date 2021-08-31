@@ -13,7 +13,12 @@ namespace ClassLibrary
     /// </summary>
     public class Train
     {
-        public static int count = 0;
+        private static int _count = 0;
+        public static int Count {
+            get {
+                return _count;
+            }
+        }
 
         /// <summary>
         /// Obtiene un valor que indica si las maquinas del tren han sido encendidas o no.
@@ -25,7 +30,7 @@ namespace ClassLibrary
 
         public Train(string nombre) {
             this.Nombre = nombre;
-            count++;
+            _count++;
         }
 
         /// <summary>
@@ -67,7 +72,7 @@ namespace ClassLibrary
         }
 
         ~Train() {
-            count--;
+            _count--;
         }
     }
 }
